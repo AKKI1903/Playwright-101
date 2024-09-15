@@ -61,7 +61,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Test Scenaio 1",
+          "title": "Test Scenaio 2",
           "ok": true,
           "tags": [],
           "tests": [
@@ -73,31 +73,31 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 10,
+                  "workerIndex": 84,
                   "status": "passed",
-                  "duration": 2761,
+                  "duration": 5959,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Before Entering Input: Please enter your Message\n"
+                      "text": "Initial slider value: 15\n"
                     },
                     {
-                      "text": "After enterting the value: Welcome to LambdaTest\n"
+                      "text": "Final slider value: 95\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T17:16:30.549Z",
+                  "startTime": "2024-09-15T23:13:11.045Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1\\test-finished-1.png"
+                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-2\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1\\video.webm"
+                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-2\\video.webm"
                     }
                   ]
                 }
@@ -105,9 +105,9 @@
               "status": "expected"
             }
           ],
-          "id": "e776a7fc52a70022bea4-2f30d1205978f370d7b7",
+          "id": "e776a7fc52a70022bea4-e40080acf97e27e28ac2",
           "file": "tests/Demo.test.ts",
-          "line": 5,
+          "line": 12,
           "column": 5
         }
       ]
@@ -115,8 +115,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-15T17:16:27.589Z",
-    "duration": 6604.887999999803,
+    "startTime": "2024-09-15T23:13:08.002Z",
+    "duration": 9967.404000000097,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

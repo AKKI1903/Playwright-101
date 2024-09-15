@@ -6,7 +6,10 @@ const config: PlaywrightTestConfig = {
     baseURL:"https://www.lambdatest.com/selenium-playground/",
     headless: false,
     screenshot: "on",
-    video: "on"
+    video: "on",
+    /* launchOptions: {
+      slowMo: 2000
+    } */
   },
   reporter:[["json", {
     outputFile: "report/jsonReport.json"
