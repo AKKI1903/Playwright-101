@@ -1,4 +1,4 @@
-import {PlaywrightTestConfig} from "@playwright/test"
+import {devices, PlaywrightTestConfig} from "@playwright/test"
 
 
 const config: PlaywrightTestConfig = {
@@ -7,9 +7,10 @@ const config: PlaywrightTestConfig = {
     headless: false,
     screenshot: "on",
     video: "on",
-    /* launchOptions: {
-      slowMo: 2000
-    } */
+    viewport: null,
+    launchOptions: {
+      args: ['--start-maximized']
+    }
   },
   reporter:[["json", {
     outputFile: "report/jsonReport.json"

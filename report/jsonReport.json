@@ -37,8 +37,22 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "",
-        "name": "",
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Users/ankushsharma/Playwright 101",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/ankushsharma/Playwright 101/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
         "testDir": "c:/Users/ankushsharma/Playwright 101",
         "testIgnore": [],
         "testMatch": [
@@ -61,7 +75,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Test Scenaio 2",
+          "title": "Test Scenaio 1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -69,35 +83,35 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
+              "projectId": "firefox",
+              "projectName": "firefox",
               "results": [
                 {
-                  "workerIndex": 84,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5959,
+                  "duration": 10488,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Initial slider value: 15\n"
+                      "text": "Before Entering Input: Please enter your Message\n"
                     },
                     {
-                      "text": "Final slider value: 95\n"
+                      "text": "After enterting the value: Welcome to LambdaTest\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-09-15T23:13:11.045Z",
+                  "startTime": "2024-09-16T19:05:39.489Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-2\\test-finished-1.png"
+                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1-firefox\\test-finished-1.png"
                     },
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-2\\video.webm"
+                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1-firefox\\video.webm"
                     }
                   ]
                 }
@@ -105,9 +119,9 @@
               "status": "expected"
             }
           ],
-          "id": "e776a7fc52a70022bea4-e40080acf97e27e28ac2",
+          "id": "e776a7fc52a70022bea4-060198ffe2aeb28d3eda",
           "file": "tests/Demo.test.ts",
-          "line": 12,
+          "line": 7,
           "column": 5
         }
       ]
@@ -115,8 +129,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-15T23:13:08.002Z",
-    "duration": 9967.404000000097,
+    "startTime": "2024-09-16T19:05:36.437Z",
+    "duration": 16569.5,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
