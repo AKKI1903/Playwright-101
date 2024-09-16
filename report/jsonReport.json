@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\Users\\ankushsharma\\Playwright 101\\playwright.config.ts",
-    "rootDir": "c:/Users/ankushsharma/Playwright 101",
+    "configFile": "C:\\Users\\ankushsharma\\Playwright 101\\playwright.config.ts",
+    "rootDir": "C:/Users/ankushsharma/Playwright 101",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 2
     },
     "preserveOutput": "always",
     "reporter": [
@@ -33,30 +33,30 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/Users/ankushsharma/Playwright 101/test-results",
+        "outputDir": "C:/Users/ankushsharma/Playwright 101/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "chromium",
-        "name": "chromium",
-        "testDir": "c:/Users/ankushsharma/Playwright 101",
+        "id": "chrome:latest:MacOS Ventura@lambdatest",
+        "name": "chrome:latest:MacOS Ventura@lambdatest",
+        "testDir": "C:/Users/ankushsharma/Playwright 101",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "tests/Demo.test.ts"
         ],
         "timeout": 30000
       },
       {
-        "outputDir": "c:/Users/ankushsharma/Playwright 101/test-results",
+        "outputDir": "C:/Users/ankushsharma/Playwright 101/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
-        "id": "firefox",
-        "name": "firefox",
-        "testDir": "c:/Users/ankushsharma/Playwright 101",
+        "id": "chrome:latest:Windows 11@lambdatest",
+        "name": "chrome:latest:Windows 11@lambdatest",
+        "testDir": "C:/Users/ankushsharma/Playwright 101",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "tests/Demo.test.ts"
         ],
         "timeout": 30000
       }
@@ -73,67 +73,117 @@
       "file": "tests/Demo.test.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Test Scenaio 1",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Playwright Test Ground",
+          "file": "tests/Demo.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
+              "title": "Test Scenario 3",
+              "ok": true,
+              "tags": [
+                "lambdatest"
+              ],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 10488,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome:latest:MacOS Ventura@lambdatest",
+                  "projectName": "chrome:latest:MacOS Ventura@lambdatest",
+                  "results": [
                     {
-                      "text": "Before Entering Input: Please enter your Message\n"
-                    },
-                    {
-                      "text": "After enterting the value: Welcome to LambdaTest\n"
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 10068,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Validation passed. Required field error message is correct.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-16T22:27:54.803Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Playwright-Test-Ground-Test-Scenario-3-chrome-latest-MacOS-Ventura-lambdatest\\test-finished-1.png"
+                        }
+                      ]
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-09-16T19:05:39.489Z",
-                  "attachments": [
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome:latest:Windows 11@lambdatest",
+                  "projectName": "chrome:latest:Windows 11@lambdatest",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1-firefox\\test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "c:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Test-Scenaio-1-firefox\\video.webm"
+                      "workerIndex": 1,
+                      "status": "timedOut",
+                      "duration": 30696,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\ankushsharma\\Playwright 101\\pages\\inputForms.ts",
+                            "column": 14,
+                            "line": 82
+                          },
+                          "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('#inputState')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\inputForms.ts:82\n\n\u001b[0m \u001b[90m 80 |\u001b[39m     \u001b[36masync\u001b[39m enterState(state\u001b[33m:\u001b[39m string) {\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"#inputState\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m             \u001b[33m.\u001b[39mfill(state)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m     }\n \u001b[90m 84 |\u001b[39m     \u001b[36masync\u001b[39m enterZipCode(zipcode\u001b[33m:\u001b[39m number) {\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='zip']\"\u001b[39m)\u001b[0m\n\n\u001b[2m    at InputForm.enterState (C:\\Users\\ankushsharma\\Playwright 101\\pages\\inputForms.ts:82:14)\u001b[22m\n\u001b[2m    at C:\\Users\\ankushsharma\\Playwright 101\\tests\\Demo.test.ts:30:26\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Validation passed. Required field error message is correct.\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-16T22:27:54.803Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Playwright-Test-Ground-Test-Scenario-3-chrome-latest-Windows-11-lambdatest\\test-failed-1.png"
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "id": "e776a7fc52a70022bea4-d46e9b9d7fc68dd2825e",
+              "file": "tests/Demo.test.ts",
+              "line": 17,
+              "column": 10
             }
-          ],
-          "id": "e776a7fc52a70022bea4-060198ffe2aeb28d3eda",
-          "file": "tests/Demo.test.ts",
-          "line": 7,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-16T19:05:36.437Z",
-    "duration": 16569.5,
+    "startTime": "2024-09-16T22:27:53.455Z",
+    "duration": 32120.073999999997,
     "expected": 1,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

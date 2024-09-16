@@ -8,9 +8,9 @@ export default class InputForm {
         await this.page.getByText("Input Form Submit").click();
         expect(this.page.url()).toContain('input-form-demo');
 
-        await Promise.all([
+       /*  await Promise.all([
             this.page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection')
-        ])
+        ]) */
 
         await this.page.getByText('Submit').click();
         await this.page.waitForTimeout(500)
@@ -21,7 +21,7 @@ export default class InputForm {
         );
 
         // Validate the error message as per requirement
-        if (errorMessage === "Please fill in this field.") {
+        if (errorMessage === "Please fill out this field.") {
             console.log("Validation passed. Required field error message is correct.");
         } else {
             console.error("Validation failed. Unexpected error message:", errorMessage);

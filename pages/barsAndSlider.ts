@@ -8,9 +8,9 @@ export default class BarsAndSliders {
 
         await this.page.getByText("Drag & Drop Sliders").click();
         expect(this.page.url()).toContain('drag-drop-range-sliders-demo');
-        await Promise.all([
+        /* await Promise.all([
             this.page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection')
-        ])
+        ]) */
 
         const slider = this.page.locator('input.sp__range').nth(2);
 
