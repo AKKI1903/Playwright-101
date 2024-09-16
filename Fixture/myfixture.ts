@@ -15,8 +15,8 @@ const capabilities = {
     browserVersion: "latest",
     "LT:Options": {
         platform: "Windows 11 ", 
-        build: "Playwright Test Build",
-        name: "Playwright 101",
+        build: "Playwright Test Ground",
+        name: "Playwright 101 Assignment",
         user: "ankush.akki19",
         accessKey: "kzDFHJzi6YlOmtX3IyXJenaHGbq4DLVruqgxmfsT5xvZMkEKog",
         network: true,
