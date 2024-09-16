@@ -11,15 +11,15 @@ const config: PlaywrightTestConfig = {
   {
      name: "chrome:latest:Windows 11@lambdatest",
      use: {
-       viewport: { width: 1280, height: 720 },
+       viewport: { width: 1920, height: 1080 },
     },  
   },
-  /* {
+  {
     name: "pw-firefox:latest:Windows 11@lambdatest",
     use: {
-      viewport: { width: 1280, height: 720 },
+      viewport: { width: 1920, height: 1080 },
     },
-  }, */
+  },
    /*  {
     name: 'chromium',
     use: { ...devices['Desktop Chrome'], viewport: { width: 1920, height: 1080 } }

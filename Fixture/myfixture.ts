@@ -21,10 +21,7 @@ const capabilities = {
         accessKey: "kzDFHJzi6YlOmtX3IyXJenaHGbq4DLVruqgxmfsT5xvZMkEKog",
         network: true,
         video: true,
-        console: true,
-        tunnel: false, // Add tunnel configuration if testing locally hosted webpage
-        tunnelName: "", // Optional
-        geoLocation: '', // country code can be fetched from https://www.lambdatest.com/capabilities-generator/
+        console: true
     } 
 } 
 

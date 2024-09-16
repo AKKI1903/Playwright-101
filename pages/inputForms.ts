@@ -8,12 +8,14 @@ export default class InputForm {
         await this.page.getByText("Input Form Submit").click();
         expect(this.page.url()).toContain('input-form-demo');
 
-       /*  await Promise.all([
-            this.page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection')
-        ]) */
+        const cookiebox='#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'
+        
+        if (await this.page.locator(cookiebox).isVisible()) {
+            await this.page.click(cookiebox);
+            console.log('Cookie consent popup found and clicked.');
+        }
 
         await this.page.getByText('Submit').click();
-        await this.page.waitForTimeout(500)
 
         const errorMessage = await this.page.$eval(
             "input:invalid",
@@ -31,7 +33,7 @@ export default class InputForm {
 
     async submitWithValues() {
         await this.page.getByText('Submit').click();
-        await this.page.waitForTimeout(500)
+        await this.page.waitForTimeout(50)
         const successMessage = await this.page.locator("p[class='success-msg hidden']").innerText();
         expect(successMessage).toBe("Thanks for contacting us, we will get back to you shortly.")
 

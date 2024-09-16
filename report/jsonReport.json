@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 3
     },
     "preserveOutput": "always",
     "reporter": [
@@ -59,6 +59,20 @@
           "tests/Demo.test.ts"
         ],
         "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/ankushsharma/Playwright 101/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "pw-firefox:latest:Windows 11@lambdatest",
+        "name": "pw-firefox:latest:Windows 11@lambdatest",
+        "testDir": "C:/Users/ankushsharma/Playwright 101",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/Demo.test.ts"
+        ],
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -98,16 +112,16 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 10068,
+                      "duration": 9201,
                       "errors": [],
-                      "stdout": [
+                      "stdout": [],
+                      "stderr": [
                         {
-                          "text": "Validation passed. Required field error message is correct.\n"
+                          "text": "Validation failed. Unexpected error message: Please fill in this field.\n"
                         }
                       ],
-                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-09-16T22:27:54.803Z",
+                      "startTime": "2024-09-16T22:56:32.525Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -128,25 +142,9 @@
                   "results": [
                     {
                       "workerIndex": 1,
-                      "status": "timedOut",
-                      "duration": 30696,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "C:\\Users\\ankushsharma\\Playwright 101\\pages\\inputForms.ts",
-                            "column": 14,
-                            "line": 82
-                          },
-                          "message": "Error: locator.fill: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('#inputState')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages\\inputForms.ts:82\n\n\u001b[0m \u001b[90m 80 |\u001b[39m     \u001b[36masync\u001b[39m enterState(state\u001b[33m:\u001b[39m string) {\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"#inputState\"\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 82 |\u001b[39m             \u001b[33m.\u001b[39mfill(state)\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 83 |\u001b[39m     }\n \u001b[90m 84 |\u001b[39m     \u001b[36masync\u001b[39m enterZipCode(zipcode\u001b[33m:\u001b[39m number) {\n \u001b[90m 85 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"input[name='zip']\"\u001b[39m)\u001b[0m\n\n\u001b[2m    at InputForm.enterState (C:\\Users\\ankushsharma\\Playwright 101\\pages\\inputForms.ts:82:14)\u001b[22m\n\u001b[2m    at C:\\Users\\ankushsharma\\Playwright 101\\tests\\Demo.test.ts:30:26\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 17862,
+                      "errors": [],
                       "stdout": [
                         {
                           "text": "Validation passed. Required field error message is correct.\n"
@@ -154,14 +152,43 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-09-16T22:27:54.803Z",
+                      "startTime": "2024-09-16T22:56:32.716Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Playwright-Test-Ground-Test-Scenario-3-chrome-latest-Windows-11-lambdatest\\test-failed-1.png"
+                          "path": "C:\\Users\\ankushsharma\\Playwright 101\\test-results\\tests-Demo-Playwright-Test-Ground-Test-Scenario-3-chrome-latest-Windows-11-lambdatest\\test-finished-1.png"
                         }
                       ]
+                    }
+                  ],
+                  "status": "expected"
+                },
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "pw-firefox:latest:Windows 11@lambdatest",
+                  "projectName": "pw-firefox:latest:Windows 11@lambdatest",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "timedOut",
+                      "duration": 30016,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-09-16T22:56:32.636Z",
+                      "attachments": []
                     }
                   ],
                   "status": "unexpected"
@@ -179,9 +206,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-09-16T22:27:53.455Z",
-    "duration": 32120.073999999997,
-    "expected": 1,
+    "startTime": "2024-09-16T22:56:30.608Z",
+    "duration": 32153.426999999996,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

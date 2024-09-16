@@ -8,13 +8,15 @@ export default class BarsAndSliders {
 
         await this.page.getByText("Drag & Drop Sliders").click();
         expect(this.page.url()).toContain('drag-drop-range-sliders-demo');
-        /* await Promise.all([
-            this.page.click('#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection')
-        ]) */
+        const cookiebox='#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection'
+        
+        if (await this.page.locator(cookiebox).isVisible()) {
+            await this.page.click(cookiebox);
+            console.log('Cookie consent popup found and clicked.');
+        }
 
         const slider = this.page.locator('input.sp__range').nth(2);
 
-        //await sliderValue.dragTo
         const sliderBox = await slider.boundingBox(); // Get the slider's bounding box
         if (!sliderBox) {
             throw new Error('Slider bounding box not found');
