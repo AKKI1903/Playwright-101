@@ -83,6 +83,28 @@ npx playwright test --project="chrome:latest:MacOS Ventura@lambdatest"
 
 You can similarly run the tests for the other browser and OS combinations configured in the `projects` array in `playwright.config.ts`.
 
+## Cloud-Based Development with Gitpod
+
+You can also run this project directly in a cloud-based development environment using [Gitpod](https://www.gitpod.io/). Gitpod provides a ready-to-code environment with all the dependencies pre-installed, so you can focus on writing and running tests.
+
+To launch the project on Gitpod, click the button below:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AKKI1903/Playwright-101)
+
+Gitpod will automatically use the configuration defined in the `.gitpod.yml` file to set up the environment.
+
+### How Gitpod is configured
+
+- The `.gitpod.yml` file handles:
+  - Installing dependencies (`npm install`)
+  - Setting up Playwright browsers (`npx playwright install`)
+  - Running Playwright tests (`npx playwright test`)
+  - Prebuilding the workspace for faster startup.
+
+You can find the `.gitpod.yml` file [here](./.gitpod.yml).
+
+---
+
 ## Configuration
 
 The test configuration is defined in `playwright.config.ts`. This includes browser settings, timeout configurations, and parallel execution setups. You can specify different browser and OS combinations to run tests on LambdaTest's cloud infrastructure.
